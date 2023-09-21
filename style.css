@@ -1,0 +1,83 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+ }
+
+ body {
+    background: #5c7185;
+ }
+
+ ul {
+    list-style: none;
+ }
+ .menu-acordeon {
+    max-width: 300px;
+    margin: 100px auto 20px;
+    background: #242d41;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #000;
+ }
+
+ .menu-acordeon li:last-child .lista{
+    border-bottom: 0;
+ }
+
+ .menu-acordeon li.active .lista{
+    color: #fff;
+ }
+
+ .lista {
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 45px;
+    font: 18px;
+    border-bottom: 2px solid #2d374d;
+    color:#999;
+    position: relative;
+    transition: all 0.4 ease-out;
+ }
+
+.lista:hover{
+    background: #566f82;
+    background: -webkit-gradient(linear,0% 0%,0% 100%, from(#27455c), to(#273a47));
+ }
+
+ .lista i{
+    position: absolute;
+    top: 17px;
+    left: 16px;
+
+ }
+
+ .lista .fa-door-open{
+    right: 12px;
+    left: auto;
+    transition: transform 0.2s ease-in-out;
+
+ }
+
+ .sublista {
+    display: none;
+    background: #2d374d;
+    transition: all 2s ease-in-out;
+ }
+ .menu-acordeon li.active .sublista{
+    display: block;
+ }
+
+ .sublista a{
+    display: block;
+    color: #66b2ff;
+    font-weight: 600;
+    padding: 12px 12px 12px 45px;
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+ }
+ .sublista a:hover {
+    background: #5c7185;
+    color:#fff;
+ }
